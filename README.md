@@ -1,54 +1,61 @@
-# CodeIgniter 4 Framework
+# CodeIgniter News
 
-## What is CodeIgniter?
+Este es un proyecto de ejemplo que demuestra un CRUD (Crear, Leer, Actualizar, Borrar) básico para administrar noticias utilizando el framework CodeIgniter.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Requisitos
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- PHP >= 7.2
+- CodeIgniter >= 4.1
+- MySQL (u otro sistema de gestión de bases de datos)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## Instalación
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+1. Clona el repositorio:
 
-## Important Change with index.php
+https://github.com/Ccanochu/codeigniter_news/
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+2. Configura tu entorno de desarrollo:
 
-**Please** read the user guide for a better explanation of how CI4 works!
+- Crea una base de datos en tu servidor MySQL.
+- Copia el archivo `.env.example` y renómbralo a `.env`. Luego, configura las variables de entorno relacionadas con la base de datos.
 
-## Repository Management
+3. Ejecuta las migraciones para crear la tabla de noticias:
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+## Uso
 
-## Contributing
+### Crear una nueva noticia
 
-We welcome contributions from the community.
+1. Ve a la sección "Crear Noticia" en la aplicación.
+2. Completa el formulario con el título y el cuerpo de la noticia.
+3. Haz clic en "Guardar".
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+### Editar una noticia existente
 
-## Server Requirements
+1. Ve a la sección "Lista de Noticias" en la aplicación.
+2. Haz clic en el enlace "Editar" junto a la noticia que deseas modificar.
+3. Realiza los cambios y haz clic en "Actualizar".
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+### Eliminar una noticia
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+1. Ve a la sección "Lista de Noticias" en la aplicación.
+2. Haz clic en el enlace "Eliminar" junto a la noticia que deseas borrar.
+3. Confirma la eliminación.
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+## Contribuir
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Si deseas contribuir al proyecto, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tus cambios: `git checkout -b feature/nueva-funcionalidad`.
+3. Realiza tus cambios y haz commit: `git commit -m "Agrega nueva funcionalidad"`.
+4. Haz push a tu rama: `git push origin feature/nueva-funcionalidad`.
+5. Abre un Pull Request en GitHub.
+
+## Capturas de Pantalla
+
+![image](https://github.com/Ccanochu/codeigniter_news/assets/63028873/c2fd2b5b-a0f9-4d3f-8a6e-9daea1e13f93)
+
+
+Si tienes preguntas o sugerencias, contáctame a través de ccanochu@gmail.com
