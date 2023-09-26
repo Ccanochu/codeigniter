@@ -10,11 +10,15 @@ class NewsModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['title', 'slug', 'body'];
 
-    protected $beforeInsert = ['generateSlug'];
-
-    protected function generateSlug(array $data)
+    public function getNews($slug = false)
     {
-        $data['data']['slug'] = url_title($data['data']['title'], '-', true);
-        return $data;
+        if ($slug === false)
+        {
+            return $this->findAll();
+        }
+
+        return $this->asArray()
+                    ->where(['slug' => $slug])
+                    ->first();
     }
 }

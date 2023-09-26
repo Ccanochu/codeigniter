@@ -8,15 +8,13 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 use App\Controllers\News;
-use App\Controllers\Pages;
 
-$routes->get('news', 'News::index');
-$routes->get('news/create', 'News::create');
-$routes->post('news/store', 'News::store');
-$routes->get('news/edit/(:num)', 'News::edit/$1');
-$routes->post('news/update/(:num)', 'News::update/$1');
-$routes->get('news/delete/(:num)', 'News::delete/$1');
-
-$routes->get('pages', [Pages::class, 'index']);
-
-$routes->get('(:segment)', [Pages::class, 'view']);
+$routes->group('news', function ($routes) {
+    $routes->get('/', [News::class, 'index']);
+    $routes->get('view/(:segment)', [News::class, 'view/$1']);
+    $routes->get('create', [News::class, 'create']);
+    $routes->post('store', [News::class, 'store']);
+    $routes->get('edit/(:segment)', [News::class, 'edit/$1']);
+    $routes->post('update', [News::class, 'update']);
+    $routes->get('delete/(:segment)', [News::class, 'delete/$1']);
+});
