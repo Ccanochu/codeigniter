@@ -53,9 +53,9 @@ Si deseas contribuir al proyecto, sigue estos pasos:
 4. Haz push a tu rama: `git push origin feature/nueva-funcionalidad`.
 5. Abre un Pull Request en GitHub.
 
-## Capturas de Pantalla
+## Funcionamiento de Web
 
-![image](https://github.com/Ccanochu/codeigniter_news/assets/63028873/c2fd2b5b-a0f9-4d3f-8a6e-9daea1e13f93)
+![someone3](https://github.com/Ccanochu/codeigniter/assets/63028873/b1ec460e-c1e4-451c-aa4b-23f8e34f4ac0)
 
 
 Si tienes preguntas o sugerencias, contáctame a través de ccanochu@gmail.com
