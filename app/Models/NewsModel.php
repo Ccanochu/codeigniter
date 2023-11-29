@@ -8,7 +8,7 @@ class NewsModel extends Model
 {
     protected $table = 'news';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['title', 'slug', 'body'];
+    protected $allowedFields = ['title', 'slug', 'body', 'image']; // Agrega 'image' aquí
 
     public function getNews($slug = false)
     {

@@ -1,0 +1,117 @@
+CRITICAL - 2023-11-21 01:05:33 --> Undefined variable $item
+in APPPATH\Views\news\edit.php on line 28.
+ 1 APPPATH\Views\news\edit.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\codeigniter_news\\app\\Views\\news\\edit.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\codeigniter_news\\app\\Views\\news\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('news/edit', [], true)
+ 5 APPPATH\Controllers\News.php(65): view('news/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->edit('gggggg', 'gggggg')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 01:05:39 --> Undefined variable $item
+in APPPATH\Views\news\edit.php on line 28.
+ 1 APPPATH\Views\news\edit.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\codeigniter_news\\app\\Views\\news\\edit.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\codeigniter_news\\app\\Views\\news\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('news/edit', [], true)
+ 5 APPPATH\Controllers\News.php(65): view('news/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->edit('gggggg', 'gggggg')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 01:14:17 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\News.php(43): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\codeigniter_news\\public/uploads/', '1700529257_b325da9b5bb2385822f8')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->store()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 03:02:53 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 03:04:33 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 03:06:49 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 03:06:59 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:01:47 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\news\index.php on line 38.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('news/index', [], true)
+ 3 APPPATH\Controllers\News.php(15): view('news/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:08:36 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:44:34 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:48:16 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:48:27 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:50:42 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:52:55 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:55:31 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 04:57:44 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-21 05:00:20 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

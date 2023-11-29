@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body class="container mt-5">
-    <h1>Crear Noticia</h1>
+    <h2>Crear Noticia</h2>
 
-    <form action="<?= base_url('news/store') ?>" method="post">
+    <form action="<?= base_url('news/store') ?>" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="title">Título</label>
             <input type="text" class="form-control" id="title" name="title" required>
@@ -17,6 +17,12 @@
         <div class="form-group">
             <label for="body">Contenido</label>
             <textarea class="form-control" id="body" name="body" required></textarea>
+        </div>
+
+        <!-- Nuevo campo para el archivo de entrada -->
+        <div class="form-group">
+            <label for="image">Imagen</label>
+            <input type="file" class="form-control-file" id="image" name="image">
         </div>
 
         <button type="submit" class="btn btn-primary">Guardar</button>

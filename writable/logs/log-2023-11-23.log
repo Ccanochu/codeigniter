@@ -1,0 +1,15 @@
+CRITICAL - 2023-11-23 18:10:57 --> Call to a member function isValid() on null
+in APPPATH\Controllers\News.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 18:29:09 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\News.php(104): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\News->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
